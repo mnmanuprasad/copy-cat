@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;600;700;800;900&display=swap');
+
+
+:root {
+    --body-font: "Inter", sans-serif;
+    --theme-bg: #1f1d2b;
+    --body-color: #808191;
+    --button-bg: #353340;
+    --border-color: rgb(128 129 145 / 24%);
+    --video-bg: #252936;
+    --delay: 0s;
+}
+
+* {
+    padding: 0px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* Scroll Bar */
+
+
+::-webkit-scrollbar{
+    width: 5px;
+ }
+ 
+ ::-webkit-scrollbar-thumb{
+     background-color: rgba(21, 20, 26, 0.63);
+ }
+
+
+
+body {
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Inter', sans-serif;;
+    background: url('../Assests/Images/skate.jpg');
+    /* background-color: var(--theme-bg); */
+
+    background-attachment: center;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+    display: grid;
+    place-items: center;
+}
+
+body::before {
+    content: '';
+    background-color: var(--theme-bg);
+    opacity: 0.8;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+}
+
+/* Container */
+
+.container{
+    background-color: var(--theme-bg);
+    width: 85vw;
+    height: 85vh;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    z-index: 100;
+}
+
+/* Sidebar */
+
+.sidebar{
+    color: var(--body-color);
+    padding: 30px;
+    height: 100%;
+    position: relative;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width:265px;
+}
+
+
+.sidebar .title{
+   margin-bottom: 30px;
+   color: #fff;
+}
+
+
+.sidebar .title-logo{
+   display: none;
+ }
+
+.sidebar .nav-menu{
+    display: flex;
+    flex-direction: column;
+    gap:35px;
+    
+}
+
+.nav-menu .menu{
+    padding-bottom:20px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.nav-menu ul li{
+    list-style: none;
+    padding: 10px 0px;
+    margin:10px 0px;
+    font-weight: 600;
+}  
+
+
+.menu p,
+.category p{
+    font-size: 13px;
+    letter-spacing: 1.2px;
+
+}
+
+.nav-menu ul li a{
+    color: var(--body-color);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap:15px;
+}
+
+.nav-menu ul li a:hover{
+    color:#fff;
+}
+
+.nav-menu ul li svg{
+    width: 30px;
+    height: 30px;
+    padding: 8px;
+    fill: var(--body-color);
+    background: var(--border-color);
+    border-radius: 9px;
+    flex-shrink: 0;
+   
+}
+
+.nav-menu ul li:nth-child(2n+1):hover svg{
+    background-color: #ff7551;
+    fill:#fff;
+}
+
+.nav-menu ul li:nth-child(2n):hover svg{
+    background-color: #6c5ecf;
+    fill:#fff;
+}
+
+.nav-menu ul li:nth-child(3n):hover svg{
+    background-color: #32A7E2;
+    fill:#fff;
+}
+
+/* Searchbar */
+
+.content-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 30px 10px 10px 10px;
+}
+
+.search-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.search-container svg{
+    height: 15px;
+    width: 15px;
+    fill: var(--body-color)
+}
+
+.search-container  .search-text{
+    flex-grow: 2;
+    display: flex;
+    align-items: center;
+}
+
+.search-container .search-text input{
+    width: 100%;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    padding: 5px 40px 5px 20px;
+    font-weight: 400;
+    font-size: 16px;
+    outline: none;
+    background-color: var(--border-color);
+    color: #fff;
+}
+
+.search-text .search-icon{
+    margin-left: -30px;
+    height: 15px;
+    width: 15px;
+}
+
+.search-container .profile{
+    margin-left: auto;
+}
+
+.profile{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap:15px;
+}
+
+.profile img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.profile .name{
+    color:#fff;
+    font-size: 14px;
+    font-weight: 400;
+  
+}
+
+.profile .name svg{
+    width: 13px;
+    height: 13px;
+}
+
+.profile .notification-icon{
+    margin-left:10px;
+    /* position: absolute; */
+}
+
+.profile .notification{
+    width: 7px;
+    height: 7px;
+    background: #ec5252;
+    border-radius: 50%;
+    position: relative;
+    top: -7px;
+    right: 22px;
+}
