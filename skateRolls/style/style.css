@@ -38,6 +38,8 @@ body {
     background: url('../Assests/Images/skate.jpg');
     /* background-color: var(--theme-bg); */
 
+    color:#fff;
+
     background-attachment: center;
     overflow: hidden;
     background-position: center;
@@ -172,6 +174,7 @@ body::before {
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding: 20px 0px;
 }
 
 .search-container svg{
@@ -248,4 +251,47 @@ body::before {
     position: relative;
     top: -7px;
     right: 22px;
+}
+
+/* Main Content Container */
+
+.main-content-container {
+    margin-right: 30px;
+}
+
+.main-content-container .title-heading{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.main-content-container .blogs-container{
+    margin-top: 15px;
+    display: flex;
+}
+
+.blogs-container > * {
+    border-radius: 20px;
+    padding: 30px;
+    height: 330px;
+}
+
+.blogs-container .blog:nth-child(1){
+    background-color: #31abbd;
+    background-image: url("https://assets.codepen.io/3364143/skate-removebg-preview.png");
+    background-position-x: 220px;
+    background-repeat: no-repeat;
+    width: 60%;
+
+
+}
+.blogs-container .blog:nth-child(2){
+    background-image: url("https://c0.anyrgb.com/images/1020/945/venice-beach-2018-outdoors-sport-men-jumping-desert-sunset-extreme-sports-one-person-action.jpg");
+    background-color: #4d5a5d;
+    margin-left:42px;
+    width:40%;
+
+    background-position-x: 0px;
+    background-position-y:-150px ;
+    background-size: 139%;
+    filter: saturate(1.4);
 }
