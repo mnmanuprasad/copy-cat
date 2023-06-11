@@ -275,15 +275,18 @@ body::before {
     height: 330px;
 }
 
+.blog{
+    position: relative;
+}
+
 .blogs-container .blog:nth-child(1){
     background-color: #31abbd;
     background-image: url("https://assets.codepen.io/3364143/skate-removebg-preview.png");
     background-position-x: 220px;
     background-repeat: no-repeat;
     width: 60%;
-
-
 }
+
 .blogs-container .blog:nth-child(2){
     background-image: url("https://c0.anyrgb.com/images/1020/945/venice-beach-2018-outdoors-sport-men-jumping-desert-sunset-extreme-sports-one-person-action.jpg");
     background-color: #4d5a5d;
@@ -292,6 +295,77 @@ body::before {
 
     background-position-x: 0px;
     background-position-y:-150px ;
-    background-size: 139%;
+    background-size: 140%;
     filter: saturate(1.4);
+}
+
+.blog  .blog-title{
+    font-size: 25px;
+    font-weight: 600;
+    max-width: 12ch;
+    margin-bottom:30px;
+}
+.author-profile-wrapper .profile-image-wrapper .profile-image{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #fff;
+    padding: 5px;
+}
+
+.author-profile-wrapper .profile-image-wrapper svg{
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 2px;
+    position: relative;
+    left:-20px;
+} 
+
+.blog:nth-child(1) .author-profile-wrapper svg{
+    color: #0daabc;
+    border: 2px solid #0daabc;
+}
+
+.blog:nth-child(2) .author-profile-wrapper svg{
+    color: #ffe6b2;
+    border: 2px solid #ffe6b2;
+
+}
+
+
+.blog:nth-child(1) .author-profile-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.blog:nth-child(2) .author-profile-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 2px;
+}
+
+.profile-info{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.profile-info .profile-name{
+    font-weight: bold;
+}
+
+.duration{
+    background-color: rgba(21, 13, 13, 0.44);
+    padding: 3px 7px;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.blog .duration{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
 }
