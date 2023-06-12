@@ -9,6 +9,35 @@
 }
 
 
+@media screen and (max-width: 1300px) {
+    .blogs-container .blog:nth-child(1) {
+        width: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-x: center;
+        background-blend-mode: overlay;
+    }
+
+    .blogs-container .blog:nth-child(2) {
+        width: 50%
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .blogs-container .blog:nth-child(1) {
+        width: 100%;
+    }
+
+    .blogs-container .blog:nth-child(2) {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .main-content-container .blogs-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
 @media  screen and (max-width: 1100px) {
     .sidebar{
         width:90px;
