@@ -9,6 +9,12 @@
 }
 
 
+@media screen and (max-width: 1700px) {
+    .blogs-container .blog:nth-child(1){
+        background-position-x: 60px;
+    }
+}
+
 @media screen and (max-width: 1300px) {
     .blogs-container .blog:nth-child(1) {
         width: 50%;
@@ -22,7 +28,6 @@
         width: 50%
     }
 }
-
 @media screen and (max-width: 1000px) {
     .blogs-container .blog:nth-child(1) {
         width: 100%;
@@ -78,7 +83,6 @@
     }
     
 }
-
 @media  screen and (max-width: 680px){
 
     .search-container{
@@ -105,7 +109,6 @@
 
     
 }
-
 @media screen and (max-width:500px){
     .container{
         width: 100vw;

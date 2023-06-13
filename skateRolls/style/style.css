@@ -292,7 +292,6 @@ body::before {
     background-color: #4d5a5d;
     margin-left:42px;
     width:40%;
-
     background-position-x: 0px;
     background-position-y: -120px;
     background-size: 140%;
@@ -323,8 +322,8 @@ body::before {
     border-radius: 50%;
     padding: 2px;
     position: absolute;
-        bottom: 5px;
-        right: 0px;
+    bottom: 5px;
+    right: 0px;
 } 
 
 .blog:nth-child(1) .author-profile-wrapper svg{
@@ -335,13 +334,12 @@ body::before {
 .blog:nth-child(2) .author-profile-wrapper svg{
     color: #ffe6b2;
     border: 2px solid #ffe6b2;
-
 }
-
 
 .blog:nth-child(1) .author-profile-wrapper {
     display: flex;
     align-items: center;
+    gap: 5px;
 }
 
 .blog:nth-child(2) .author-profile-wrapper {
