@@ -84,7 +84,9 @@
     
 }
 @media  screen and (max-width: 680px){
-
+    .main-content-container{
+        margin-right: 5px;
+    } 
     .search-container{
         align-content: space-around;
         gap:10px;
