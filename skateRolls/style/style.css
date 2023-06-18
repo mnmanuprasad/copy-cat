@@ -380,3 +380,59 @@ body::before {
     bottom: 20px;
     right: 20px;
 }
+
+/* Most Watched */
+
+.small-heading{
+    margin: 30px 0px 20px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.video{ 
+    width: 250px;
+    position: relative;
+}
+
+.video .video-wrapper{
+    border-radius: 20px;
+    background-color: var(--theme-bg);
+    position: relative;
+}
+
+.video .video-wrapper .duration{
+    position: absolute;
+    top: 10px;
+    right: 8px;
+}
+
+.video .video-wrapper video{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 100%;
+}
+
+.author-profile-image-wrapper{
+    position: abo;
+    left:30px;
+}
+
+.author-profile-image-wrapper svg{
+    width: 13px;
+    height: 13px;
+    /* position: absolute; */
+}
+
+.author-profile-image-wrapper img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #fff;
+    padding: 5px;
+}
+
+
+
+/* position: absolute; */
+
