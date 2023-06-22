@@ -65,6 +65,8 @@ body::before {
 
 .container{
     background-color: var(--theme-bg);
+    max-width: 1240px;
+    max-height: 900px;
     width: 85vw;
     height: 85vh;
     border-radius: 20px;
@@ -322,9 +324,8 @@ body::before {
     background-color: #fff;
     border-radius: 50%;
     padding: 2px;
-    position: relative;
+    position: absolute;
     bottom: 5px;
-    right: 0px;
 } 
 
 .blog:nth-child(1) .author-profile-wrapper .profile-image-wrapper svg{
@@ -390,17 +391,16 @@ body::before {
 }
 
 .videos{
-    display: flex;
-    flex-direction: row;
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 }
 
 .video{ 
-    width: 250px;
     background-color: var(--video-bg);
     border-radius: 20px;
     padding-bottom:20px;
-    /* position: relative; */
 }
 
 .video .video-wrapper{
@@ -419,6 +419,12 @@ body::before {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     width: 100%;
+    cursor: pointer;
+    transition: height 0.3s ease-in-out;
+}
+
+.video .video-wrapper video:hover{
+    height: 200%; 
 }
 
 .author-profile-image-wrapper{
@@ -454,7 +460,6 @@ body::before {
     color: #808191;
     font-size: 15px;
     margin-left: 10px;
-    /* font-family: sans-serif; */
 }
 
 .video .video-description{
@@ -473,7 +478,7 @@ body::before {
     color: #808191;
 }
 
-.video .author-name .online-status{
+.online-status{
     display: inline-block;
     width: 7px;
     height: 7px;
@@ -481,6 +486,10 @@ body::before {
     background-color: #22b07d;
     margin-left: 15px;
     
+}
+
+.offline-status{
+    background-color: #ff7551;
 }
 
 
