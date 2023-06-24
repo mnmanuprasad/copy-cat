@@ -1,0 +1,12 @@
+:root {
+    --bg-color-bleached-silk: #F2F2F2;
+    --bg-color-white: #fff;
+    --text-color-black-oak: #4F4F4F;
+    --text-color-trolley-grey: #828282;
+    --text-color-carbon: #333333;
+    --color-bleu-de-france: #2F80ED;
+}
+
+body {
+    background-color: var(--bg-color-bleached-silk);
+}
