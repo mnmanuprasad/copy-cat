@@ -45,6 +45,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 0px 50px;
+    gap: 30px;
 }
 
 .profile-intro-container {
@@ -116,4 +117,44 @@ body {
     .email {
         display: flex;
         justify-content: center;
+}
+.widget-container {
+    display: flex;
+}
+
+.left-widget-container {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.skill-board-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.skill-heading {
+    color: var(--text-color-black-oak);
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--text-color-black-oak);
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+}
+
+.skill p {
+    min-width: 13ch;
 }
