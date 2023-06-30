@@ -125,6 +125,7 @@ body {
 .left-widget-container {
     display: flex;
     flex-direction: column;
+    gap: 30px;
 
 }
 
@@ -132,6 +133,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    background-color: var(--bg-color-white);
 }
 
 .skill-heading {
@@ -158,3 +160,16 @@ body {
 .skill p {
     min-width: 13ch;
 }
+.hobbies-container {
+    background-color: var(--bg-color-white);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hobbies-container .hobbies-name {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.hobbies-container .hobby {}
