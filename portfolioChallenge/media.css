@@ -14,25 +14,22 @@
     }
 
     .hobbies .hobby{
-        max-width: 260px;
+        max-width: 100%;
     }
+
     .right-widget-container .blogs-container{
         padding: 30px;
     }
     
     .blogs-container .blog-cover img{
-        /* width: 550px; */
-        min-width: 550px;
         border-radius: 10px;
     }
 }
 
-
 @media screen and (max-width: 780px) {
 
     .container {
-        /* min-width: 650px; */
-        width: 550px;
+        width: 80%;
     }
 
     .profile-intro-container {
@@ -59,14 +56,33 @@
         max-width: 100%;
     }
     .right-widget-container .blogs-container{
-    padding: 30px;
+     padding: 30px;
     }
 
     .blogs-container .blog-cover img{
         min-width: 400px;
         border-radius: 10px;
     }
+    
+    .profile-intro-container{
+        align-items: center;
+    }
 
-  
+    .intro-details{
+        align-items: center;
+    }
+    .intro-details .profile-details-container{
+        width: 100%;
+    }
+    .profile-name-container{
+        align-items: center;
+    }
 }
 
+@media  screen and (max-width: 480px) {
+    .container{
+        width: 90%;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+}
