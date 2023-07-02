@@ -37,8 +37,8 @@ body {
   max-width: 1120px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center; */
+  /* align-items: center; */
   padding: 0px 50px;
   gap: 30px;
 }
@@ -53,8 +53,9 @@ body {
 }
 
 .profile-intro-container .profile-pic img {
-  width: 270px;
-  height: 260px;
+  min-width:200px;
+  max-width: 270px;
+  /* height: 260px; */
   border-radius: 10px;
 }
 
@@ -113,15 +114,16 @@ body {
   display: flex;
   justify-content: center;
 }
+
 .widget-container {
   display: flex;
+  gap: 30px;
 }
 
 .left-widget-container {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  padding: 20px;
 }
 
 .skill-board-container {
@@ -141,8 +143,7 @@ body {
 }
 
 .skills {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: 5px;
   font-size: 16px;
   font-weight: 500;
@@ -180,8 +181,8 @@ body {
     gap: 10px;
 }
 .hobby img{
-    width: 370px;
-    height: 210px;
+    max-width: 370px;
+    /* height: 210px; */
     border-radius: 10px;
 }
 
@@ -191,10 +192,9 @@ body {
     color: var(--text-color-carbon);
 }
 
-.right-widget-container{
-    padding: 20px;
+/* .right-widget-container{
    
-}
+} */
 
 .right-widget-container .blogs-container {
    background-color: var(--bg-color-white);

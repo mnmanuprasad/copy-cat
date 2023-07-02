@@ -1,17 +1,72 @@
+@media screen and (max-width: 960px) {
+    .widget-container{
+        flex-direction: column;
+    }
+
+   .skill-board-container .skills{
+        grid-template-columns: 1fr 1fr;
+
+    }
+    .hobbies-container .hobbies{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .hobbies .hobby{
+        max-width: 260px;
+    }
+    .right-widget-container .blogs-container{
+        padding: 30px;
+    }
+    
+    .blogs-container .blog-cover img{
+        /* width: 550px; */
+        min-width: 550px;
+        border-radius: 10px;
+    }
+}
+
+
 @media screen and (max-width: 780px) {
+
+    .container {
+        /* min-width: 650px; */
+        width: 550px;
+    }
+
     .profile-intro-container {
         flex-direction: column;
     }
 
     .profile-details-container {
         flex-direction: column;
-        /* justify-content: center; */
+        justify-content: center;
         gap: 20px;
         align-self: start;
     }
 
-    .container {
-        min-width: 350px;
-        width: 350px;
+    
+    .skill-board-container .skills{
+        grid-template-columns: 1fr;
     }
+
+    .blogs-container .blog-cover{
+        flex-direction: column;
+    }
+
+    .hobbies .hobby{
+        max-width: 100%;
+    }
+    .right-widget-container .blogs-container{
+    padding: 30px;
+    }
+
+    .blogs-container .blog-cover img{
+        min-width: 400px;
+        border-radius: 10px;
+    }
+
+  
 }
+
