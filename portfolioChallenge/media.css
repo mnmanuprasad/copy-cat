@@ -11,6 +11,7 @@
         display: flex;
         flex-wrap: wrap;
         gap: 20px;
+        justify-content: center;
     }
 
     .hobbies .hobby{
@@ -29,7 +30,7 @@
 @media screen and (max-width: 780px) {
 
     .container {
-        width: 80%;
+        max-width: 80%;
     }
 
     .profile-intro-container {
@@ -61,6 +62,7 @@
 
     .blogs-container .blog-cover img{
         min-width: 400px;
+        height: auto;
         border-radius: 10px;
     }
     
@@ -77,12 +79,14 @@
     .profile-name-container{
         align-items: center;
     }
+
+    .hobbies-container .hobbies{
+        justify-content: center;
+    }
 }
 
 @media  screen and (max-width: 480px) {
     .container{
-        width: 90%;
-        padding-right: 0px;
-        padding-left: 0px;
+        width: 95%;
     }
 }

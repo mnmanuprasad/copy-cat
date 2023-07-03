@@ -180,10 +180,11 @@ body {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    margin-bottom: 10px;
 }
 .hobby img{
-    max-width: 370px;
-    /* height: 210px; */
+    width: 370px;
+    height: 200px;
     border-radius: 10px;
 }
 
@@ -193,9 +194,11 @@ body {
     color: var(--text-color-carbon);
 }
 
-/* .right-widget-container{
-   
-} */
+.right-widget-container{
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
 
 .right-widget-container .blogs-container {
    background-color: var(--bg-color-white);
@@ -235,3 +238,70 @@ body {
     font-size: 16px;
     color: var(--bleu-de-france);
 }
+
+/* Experience Container section */
+.experience-container{
+  background-color: var(--bg-color-white);
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.experience-container .experience-heading{
+  color: var(--text-color-black-oak);
+  font-weight: 500;
+  size: 24px;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+.experiences{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.experience-container{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.experiences .experience{
+  display: flex;
+  gap: 20px;
+}
+
+.experience .time-period{
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  color: var(--text-color-trolley-grey);
+}
+
+.experience img{
+  width: 120px;
+  height: 84px;
+}
+
+.experience div{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.experience  .role-name{
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.experience .description{
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-top: 20px;
+}
+
+
+
+
