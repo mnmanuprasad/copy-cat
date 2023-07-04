@@ -34,7 +34,7 @@ body {
 
 .container {
   margin: 50px 0px;
-  max-width: 1120px;
+  max-width: 1000px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -184,7 +184,7 @@ body {
 }
 .hobby img{
     width: 370px;
-    height: 200px;
+    height: 160px;
     border-radius: 10px;
 }
 
@@ -224,7 +224,7 @@ body {
     max-width: 15ch;
 }
 .blogs-container  .small-description{
-    margin: 20px 0px;
+    margin: 40px 0px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -268,7 +268,7 @@ body {
 
 .experiences .experience{
   display: flex;
-  gap: 20px;
+  gap: 30px;
 }
 
 .experience .time-period{
