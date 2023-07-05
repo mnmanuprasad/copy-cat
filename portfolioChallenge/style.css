@@ -35,13 +35,8 @@ body {
 .container {
   margin: 50px 0px;
   max-width: 1000px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   padding-right: 30px;
   padding-left: 30px;
-  gap: 30px;
 }
 
 .profile-intro-container {
@@ -51,12 +46,12 @@ body {
   justify-content: center;
   gap: 20px;
   border-radius: 10px;
+  margin-bottom: 30px;
 }
 
 .profile-intro-container .profile-pic img {
   min-width:200px;
-  max-width: 270px;
-  /* height: 260px; */
+  height: auto;
   border-radius: 10px;
 }
 
@@ -167,6 +162,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 25px;
+  /* min-width: 200px; */
 }
 
 .hobbies-container .hobby-name {
@@ -181,10 +177,11 @@ body {
     flex-direction: column;
     gap: 10px;
     margin-bottom: 10px;
+    max-width: 370px;
 }
 .hobby img{
-    width: 370px;
-    height: 160px;
+    max-width: 100%;
+    max-height: 140px;
     border-radius: 10px;
 }
 
@@ -302,6 +299,86 @@ body {
   margin-top: 20px;
 }
 
+.projects-container{
+  margin-top: 20px;
+  padding: 20px;
+  background-color: var(--bg-color-white);
+  border-radius: 10px;
+}
 
+.projects-container .project-heading{
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  color: var(--text-color-black-oak);
+  margin-bottom: 20px;
+}
 
+.projects p{
+  margin-top: 10px;
+  display: inline-block;
+  padding: 10px 25px;
+  border: 1px solid var(--text-color-black-oak);
+  border-radius: 10px;
+}
 
+.footer-blogs-conainer{
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.blog{
+  /* max-width: 300px; */
+  background-color: var(--bg-color-white);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.footer-blogs-conainer .blog img{
+  max-width: 100%;
+  height: 217px;
+  border-radius: 10px;
+}
+
+.blog .hash-tags{
+  color: var(--text-color-black-oak);
+  margin: 10px 0px;
+}
+
+.blog .blog-heading{
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29px;
+  margin-top: 10px;
+}
+
+.blog .description{
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.blog .btn-groups{
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.blog .btn-groups  div{
+  min-width: 130px;
+  padding: 15px 40px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.blog .btn-groups .demo{
+  background-color: var(--bleu-de-france);
+  color: var(--bg-color-bleached-silk);
+}
+
+.blog .btn-groups .code{
+  color: var(--bleu-de-france);
+  border: 1px solid var(--bleu-de-france);
+}

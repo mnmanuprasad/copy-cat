@@ -1,92 +1,148 @@
 @media screen and (max-width: 960px) {
-    .widget-container{
-        flex-direction: column;
-    }
+  .widget-container {
+    flex-direction: column;
+  }
 
-   .skill-board-container .skills{
-        grid-template-columns: 1fr 1fr;
+  .skill-board-container .skills {
+    grid-template-columns: 1fr 1fr;
+  }
+  .hobbies-container .hobbies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
 
-    }
-    .hobbies-container .hobbies{
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-        justify-content: center;
-    }
+  .hobbies .hobby {
+    max-width: 100%;
+  }
 
-    .hobbies .hobby{
-        max-width: 100%;
-    }
+  .right-widget-container .blogs-container {
+    padding: 30px;
+  }
 
-    .right-widget-container .blogs-container{
-        padding: 30px;
-    }
-    
-    .blogs-container .blog-cover img{
-        border-radius: 10px;
-    }
+  .blogs-container .blog-cover img {
+    border-radius: 10px;
+  }
+
+  .blogs-container .blog-cover img {
+    width: 100%;
+    height: auto;
+  }
+
+  .footer-blogs-conainer{
+    flex-direction: column;
+  }
+  .footer-blogs-conainer .blog{
+    display: flex;
+    gap: 20px;
+
+  }
 }
 
 @media screen and (max-width: 780px) {
+  .container {
+    max-width: 80%;
+  }
 
-    .container {
-        max-width: 80%;
-    }
+  .profile-intro-container {
+    flex-direction: column;
+  }
 
-    .profile-intro-container {
-        flex-direction: column;
-    }
+  .profile-details-container {
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-self: start;
+  }
 
-    .profile-details-container {
-        flex-direction: column;
-        justify-content: center;
-        gap: 20px;
-        align-self: start;
-    }
+  .skill-board-container .skills {
+    grid-template-columns: 1fr;
+  }
 
-    
-    .skill-board-container .skills{
-        grid-template-columns: 1fr;
-    }
+  .blogs-container .blog-cover {
+    flex-direction: column;
+  }
 
-    .blogs-container .blog-cover{
-        flex-direction: column;
-    }
+  .hobbies .hobby {
+    max-width: 100%;
+  }
+  .right-widget-container .blogs-container {
+    padding: 30px;
+  }
 
-    .hobbies .hobby{
-        max-width: 100%;
-    }
-    .right-widget-container .blogs-container{
-     padding: 30px;
-    }
+  .blogs-container .blog-cover img {
+    min-width: 400px;
+    height: auto;
+    border-radius: 10px;
+  }
 
-    .blogs-container .blog-cover img{
-        min-width: 400px;
-        height: auto;
-        border-radius: 10px;
-    }
-    
-    .profile-intro-container{
-        align-items: center;
-    }
+  .profile-intro-container {
+    align-items: center;
+  }
 
-    .intro-details{
-        align-items: center;
-    }
-    .intro-details .profile-details-container{
-        width: 100%;
-    }
-    .profile-name-container{
-        align-items: center;
-    }
+  .intro-details {
+    align-items: center;
+  }
+  .intro-details .profile-details-container {
+    width: 100%;
+  }
+  .profile-name-container {
+    align-items: center;
+  }
 
-    .hobbies-container .hobbies{
-        justify-content: center;
-    }
+  .hobbies-container .hobbies {
+    justify-content: center;
+  }
+
+ 
+
+  .footer-blogs-conainer .blog{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+  }
 }
 
-@media  screen and (max-width: 480px) {
-    .container{
-        width: 95%;
-    }
+@media screen and (max-width: 480px) {
+  .container {
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .skill-board-container .skills {
+    justify-items: start;
+    align-items: start;
+  }
+
+  .skill {
+    flex-direction: column;
+  }
+  .blogs-container .blog-cover img {
+    display: none;
+  }
+
+  .experience img {
+    display: none;
+  }
+  .experience-container .experience-heading{
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .profile-intro-container .profile-pic img {
+    min-width: 80px !important;
+    height: auto;
+  }
+  .role{
+    font-size: 16px;
+  }
+
+  .contact-details{
+    font-size: 14px;
+  }
 }
