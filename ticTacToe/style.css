@@ -50,7 +50,6 @@ body{
 }
 
 .bg-container  .column-second{
-  
     display: flex;
     flex-direction: column;
     justify-content: space-between;

@@ -1,0 +1,19 @@
+@media  screen and (max-width:760px) {
+    .bg-container .bg-element{
+        width: 170px;
+        height: 150px;
+    }
+    .bg-container .column-second .bg-element {
+        width: 110px;
+    }
+}
+
+@media  screen and (max-width:520px) {
+    .bg-container .bg-element{
+        width: 120px;
+        height: 80px;
+    }
+    .bg-container .column-second .bg-element {
+        width: 80px;
+    }
+}
