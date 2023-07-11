@@ -6,6 +6,17 @@
     .bg-container .column-second .bg-element {
         width: 110px;
     }
+
+    .container .tic-tac-toe-frame{
+        content: " ";
+        background-image: url('assests/tic-tac-toe-frame.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        margin-top: 40px;
+        width: 350px;
+        height: 350px;
+    } 
 }
 
 @media  screen and (max-width:520px) {
@@ -16,4 +27,16 @@
     .bg-container .column-second .bg-element {
         width: 80px;
     }
+
+    .container .tic-tac-toe-frame{
+        content: " ";
+        background-image: url('assests/tic-tac-toe-frame.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        margin-top: 40px;
+        width: 180px;
+        height: 180px;
+    }
+    
 }
