@@ -199,4 +199,41 @@ body{
     margin-top: 40px;
     width: 550px;
     height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 } 
+
+.tic-tac-toe{
+    position: absolute;
+    margin-top: 40px;
+}
+.tic-tac-toe div{
+    display: flex;
+    flex-direction: row;
+}
+
+.tic-tac-toe .element{
+    background-image: url('assests/slot.svg');
+    width: 175px;
+    height: 175px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tic-tac-toe .row1 .element:first-child{
+    border-top-left-radius: 38px;
+}
+
+.tic-tac-toe .row1 .element:last-child{
+    border-top-right-radius: 38px;
+}
+
+.tic-tac-toe .row3 .element:first-child{
+    border-bottom-left-radius: 38px;
+}
+
+.tic-tac-toe .row3 .element:last-child{
+    border-bottom-right-radius: 38px;
+}
+
