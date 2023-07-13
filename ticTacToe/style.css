@@ -14,7 +14,7 @@
 
 body{
     width:100vw;
-    height: 100vh;
+    max-height: 100vh;
     background-color: var(--color-antique-white);  
     display: flex;
     justify-content: center;
@@ -26,7 +26,7 @@ body{
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    margin-top: 80px;
     align-items: center;
  
  }
@@ -46,17 +46,17 @@ body{
 
 
 .bg-container .bg-element{
-    width: 240px;
-    height: 225px;
+    width: 150px;
+    height: 150px;
     border-radius: 8px;
     background: var(--color-marine-magic);
     box-shadow: -2px 2px 2px 4px rgba(155, 164, 167, 0.40) inset,
                  2px -2px 2px 4px rgba(0, 0, 0, 0.45) inset;
 }
 
-.bg-container .column-second .bg-element {
-    width: 180px;
-}
+/* .bg-container .column-second .bg-element {
+    width: 160px;
+} */
 
 .bg-container  .column-second{
     display: flex;
@@ -196,9 +196,9 @@ body{
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
-    margin-top: 40px;
-    width: 550px;
-    height: 550px;
+    margin-top: 95px;
+    width: 360px;
+    height: 360px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -206,7 +206,7 @@ body{
 
 .tic-tac-toe{
     position: absolute;
-    margin-top: 40px;
+    margin-top: 100px;
 }
 .tic-tac-toe div{
     display: flex;
@@ -215,25 +215,25 @@ body{
 
 .tic-tac-toe .element{
     background-image: url('assests/slot.svg');
-    width: 175px;
-    height: 175px;
+    width: 115px;
+    height: 115px;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .tic-tac-toe .row1 .element:first-child{
-    border-top-left-radius: 38px;
+    border-top-left-radius: 25px;
 }
 
 .tic-tac-toe .row1 .element:last-child{
-    border-top-right-radius: 38px;
+    border-top-right-radius: 25px;
 }
 
 .tic-tac-toe .row3 .element:first-child{
-    border-bottom-left-radius: 38px;
+    border-bottom-left-radius: 25px;
 }
 
 .tic-tac-toe .row3 .element:last-child{
-    border-bottom-right-radius: 38px;
+    border-bottom-right-radius: 25px;
 }
 
