@@ -237,3 +237,24 @@ body{
     border-bottom-right-radius: 25px;
 }
 
+.users div{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.users .planet{
+    background-image: url('assests/planet-background.svg');
+    width: 80px;
+    height: 80px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.users .star{
+    background-image: url('assests/star-background.svg');
+    width: 80px;
+    height: 80px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
