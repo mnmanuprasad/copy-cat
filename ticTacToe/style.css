@@ -139,7 +139,6 @@ body{
     filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.75)) drop-shadow(-10px 16px 20px rgba(0, 0, 0, 0.45));
 }
 
-
 .column-first div:first-child::before{
     content: " ";
     background-image: url('assests/arrow-line-up.svg');
@@ -163,8 +162,6 @@ body{
     width: 50px;
     height: 120px;
 }
-
-
 
 .column-third div:first-child::before{
     content: " ";
@@ -208,6 +205,7 @@ body{
     position: absolute;
     margin-top: 100px;
 }
+
 .tic-tac-toe div{
     display: flex;
     flex-direction: row;
@@ -235,6 +233,12 @@ body{
 
 .tic-tac-toe .row3 .element:last-child{
     border-bottom-right-radius: 25px;
+}
+
+.users{
+    position: absolute;
+    bottom: 100px;
+    z-index: -1000;
 }
 
 .users div{
@@ -281,4 +285,13 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.users .turn-button{
+    background: url("/assests/ellipse-rotate.svg");
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-self: center;
 }
