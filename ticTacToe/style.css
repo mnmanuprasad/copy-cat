@@ -217,6 +217,7 @@ body{
     height: 115px;
     background-repeat: no-repeat;
     background-size: cover;
+    cursor: pointer;
 }
 
 .tic-tac-toe .row1 .element:first-child{
@@ -294,4 +295,56 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  
+}
+
+.turn-button .rotate-icon{
+    background-image: url('/assests/rotate-icon.svg');
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    transition: transform 1s ease;
+    transform-origin: center;
+
+}
+
+.turn-button:hover .rotate-icon{
+    transform: rotate(360deg);
+}
+
+.element .move-shadow{
+    width: 100%;
+    height: 100%;
+    background-image: url('/assests/star-shadow.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: invert(0.2); 
+}
+
+.element .move-shadow.shadow-star{
+    background-image: url('/assests/star-shadow.svg');
+    opacity: 0;
+     transition: opacity 0.5s ease-in-out;
+}
+
+.element .move-shadow.shadow-planet{
+    background-image: url('/assests/planet-shadow.svg');
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+
+}
+
+.element:hover .move-shadow.shadow-star{
+     opacity: 1;
+}
+
+
+.element:hover .move-shadow.shadow-planet{
+     opacity: 1;
 }
