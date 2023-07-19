@@ -264,6 +264,9 @@ body{
     height: 80px;
     background-size: contain;
     background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .planet-bg-background{
@@ -347,4 +350,12 @@ body{
 
 .element:hover .move-shadow.shadow-planet{
      opacity: 1;
+}
+
+.star .star-img{
+    background-image: url('./assests/star.svg');
+    width: 80px;
+    height: 80px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
