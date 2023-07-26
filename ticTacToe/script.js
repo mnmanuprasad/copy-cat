@@ -6,8 +6,6 @@ const starMove = 'star'
 let nextMove = planetMove
 
 
-
-
 function handleNextMove(e){
    const shadowEle = e.target
    console.log("shadow : ", shadowEle)
