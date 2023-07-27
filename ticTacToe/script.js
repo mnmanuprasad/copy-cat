@@ -17,7 +17,6 @@ function handleNextMove(e){
     shadowEle.className = 'move-shadow shadow-star'
     nextMove = planetMove
    }
- 
   
 }
 
