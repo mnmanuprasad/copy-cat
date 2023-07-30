@@ -239,7 +239,7 @@ body{
 
 .users{
     position: absolute;
-    bottom: 30px;
+    bottom: 20px;
     z-index: -1000;
 }
 
@@ -274,7 +274,7 @@ body{
 }
 
 .planet-bg-background{
-    height: 200px;
+    height: 180px;
     padding: 0px 10px;
     border-radius: 0px 0px 40px 40px;
     background: #E9B98B;
@@ -285,7 +285,7 @@ body{
 }
 
 .star-bg-background{
-    height: 200px;
+    height: 180px;
     padding: 0px 10px;
     border-radius: 0px 0px 40px 40px;
     background: #C6D4D9;
@@ -375,5 +375,5 @@ body{
     background-size: cover;
     position: absolute;
     left: -3px;
-    bottom: 50px;
+    bottom: 40px;
 }
