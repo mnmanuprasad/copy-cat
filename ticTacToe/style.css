@@ -348,7 +348,7 @@ body{
      opacity: 1;
 }
 
-.star-img{
+.users .star-img{
     background-image: url('./assests/star.svg');
     width: 90px;
     height: 90px;
@@ -357,9 +357,10 @@ body{
     background-size: cover;
     position: absolute;
     left: -8px;
+
 }
 
-.planet-img{
+.users .planet-img{
     background-image: url('./assests/planet.svg');
     width: 90px;
     height: 90px;
@@ -369,4 +370,22 @@ body{
     position: absolute;
     left: -3px;
     bottom: 40px;
+}
+
+.star-element{
+    background-image: url('./assests/star.svg');
+    width: 90px;
+    height: 90px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.planet-element{
+    background-image: url('./assests/planet.svg');
+    width: 90px;
+    height: 90px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }

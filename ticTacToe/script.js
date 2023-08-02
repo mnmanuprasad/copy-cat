@@ -1,26 +1,42 @@
-const elements = document.querySelectorAll('.move-shadow')
+const elements = document.querySelectorAll('.move-shadow');
 
-const planetMove = 'planet'
-const starMove = 'star'
+const planetMove = 'planet';
+const starMove = 'star';
 
-let nextMove = planetMove
+let nextMove = planetMove;
 
 
-function handleNextMove(e){
+function handleMouseOver(e){
    const shadowEle = e.target
-   console.log("shadow : ", shadowEle)
    if(nextMove == planetMove){
-    shadowEle.className = 'move-shadow shadow-planet'
-    nextMove = starMove
+    shadowEle.className = 'move-shadow shadow-planet';
    }
    else{
-    shadowEle.className = 'move-shadow shadow-star'
-    nextMove = planetMove
+    shadowEle.className = 'move-shadow shadow-star';
    }
   
 }
 
+function handleNextMove(e){
+    const shadowEle = e.target
+    if(nextMove == planetMove){
+        shadowEle.className = 'move-shadow planet-element';
+        nextMove = starMove;
+    }else{
+        shadowEle.className = 'move-shadow star-element';
+        nextMove = planetMove;
+    }
+}
+
+function handleEventRemove(e){
+
+}
+
 elements.forEach((element)=>{
-    element.addEventListener('mouseover',handleNextMove)
-})
+    element.addEventListener('mouseover',handleMouseOver);
+});
+
+elements.forEach((element)=>{
+    element.addEventListener('click',handleNextMove);
+});
 
