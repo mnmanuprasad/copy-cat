@@ -26,8 +26,9 @@
         height: 70px;
     }
 
-    .tic-tac-toe{
-        position: absolute;
-        margin-top: 130px;
+    .users{
+        bottom: -160px;
     }
+
+    
   }

@@ -29,6 +29,8 @@ body{
 
  .bg-container{
     display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 32px;
     box-shadow: -32px 44px 60px 0px rgba(15, 12, 36, 0.35),
                 -8px 15px 20px 0px rgba(0, 0, 0, 0.65),
@@ -197,7 +199,6 @@ body{
 
 .tic-tac-toe{
     position: absolute;
-    margin-top: 100px;
 }
 
 .tic-tac-toe div{
