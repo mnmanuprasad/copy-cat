@@ -8,6 +8,7 @@ let nextMove = planetMove;
 
 function handleMouseOver(e){
    const shadowEle = e.target
+   
    if(nextMove == planetMove){
     shadowEle.className = 'move-shadow shadow-planet';
    }
@@ -19,6 +20,8 @@ function handleMouseOver(e){
 
 function handleNextMove(e){
     const shadowEle = e.target
+    shadowEle.removeEventListener("mouseover", handleMouseOver)
+    shadowEle.removeEventListener('click', handleNextMove)
     if(nextMove == planetMove){
         shadowEle.className = 'move-shadow planet-element';
         nextMove = starMove;
@@ -28,9 +31,6 @@ function handleNextMove(e){
     }
 }
 
-function handleEventRemove(e){
-
-}
 
 elements.forEach((element)=>{
     element.addEventListener('mouseover',handleMouseOver);
