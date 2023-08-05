@@ -324,7 +324,7 @@ body{
     height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-    filter: invert(0.2); 
+    /* filter: invert(0.2);  */
 }
 
 .element .move-shadow.shadow-star{
@@ -373,7 +373,7 @@ body{
 }
 
 .star-element{
-    background-image: url('./assests/star.svg');
+    background-image: url('./assests/star-with-bg.png');
     width: 90px;
     height: 90px;
     background-position: center;
@@ -382,10 +382,11 @@ body{
 }
 
 .planet-element{
-    background-image: url('./assests/planet.svg');
+    background-image: url('./assests/planet-with-bg.png');
     width: 90px;
     height: 90px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    /* margin-top: 5px; */
 }
