@@ -388,5 +388,22 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* margin-top: 5px; */
+}
+
+
+.row1 .element:first-child .planet-element{
+    border-top-left-radius: 10px;
+}
+
+
+.row1 .element:last-child .planet-element{
+    border-top-right-radius: 10px;
+}
+
+.row3 .element:first-child  .planet-element{
+    border-bottom-left-radius: 10px;
+}
+
+.row3 .element:last-child .planet-element{
+    border-bottom-right-radius: 10px;
 }
