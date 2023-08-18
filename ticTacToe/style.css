@@ -464,9 +464,15 @@ body{
     font-weight: bold;
 }
 
+.winner-dailog{
+    position: relative;
+    top: -500px;
+}
+
 .winner-dailog img{
     position: absolute;
     top: -80px;
     right: 50%;
     width: 150px;
 }
+

@@ -1,5 +1,6 @@
 const elements = document.querySelectorAll('.move-shadow');
 const ticTacToeEle = document.querySelectorAll('.elements');
+const winnerDialog = document.getElementById('#winner')
 
 const starMoveList = [];
 const planetMoveList = [];
@@ -20,6 +21,14 @@ const winning_combo = [
     [7,5,3]
 ];
 
+function updateWin(winner){
+    if(winner==planetMove){
+
+    }
+    else{
+
+    }
+}
 
 function handleMouseOver(e){
    const shadowEle = e.target;
@@ -42,14 +51,14 @@ function handleNextMove(e){
         shadowEle.className = 'move-shadow planet-element';
         planetMoveList.push(parseInt(elementNO))
         if(checkForWin(planetMoveList)){
-            console.log("planet wins")
+            updateWin(planetMove)
         }
         nextMove = starMove;
     }else{
         shadowEle.className = 'move-shadow star-element';
         starMoveList.push(parseInt(elementNO))
         if(checkForWin(starMoveList)){
-            console.log("star wins")
+            updateWin(starMove)
         }
         nextMove = planetMove;
     }
@@ -57,7 +66,6 @@ function handleNextMove(e){
     console.log("Planet Move :", planetMoveList)
     console.log("Star Move :", starMoveList)
 }
-
 
 function checkForWin(movesList){
     for (const combo of winning_combo) {
