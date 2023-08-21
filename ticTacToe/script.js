@@ -62,9 +62,6 @@ function handleNextMove(e){
         }
         nextMove = planetMove;
     }
-
-    console.log("Planet Move :", planetMoveList)
-    console.log("Star Move :", starMoveList)
 }
 
 function checkForWin(movesList){
