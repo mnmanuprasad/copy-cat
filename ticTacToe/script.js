@@ -1,6 +1,7 @@
 const elements = document.querySelectorAll('.move-shadow');
 const ticTacToeEle = document.querySelectorAll('.elements');
-const winnerDialog = document.getElementById('#winner')
+const winnerDialog = document.getElementById('#winner');
+const dialog = document.getElementById("dialog");
 
 const starMoveList = [];
 const planetMoveList = [];
@@ -23,10 +24,10 @@ const winning_combo = [
 
 function updateWin(winner){
     if(winner==planetMove){
-
+        dialog.show();
     }
     else{
-
+        console.log(planetMoveList)
     }
 }
 
@@ -81,3 +82,7 @@ elements.forEach((element)=>{
     element.addEventListener('click',handleNextMove);
 });
 
+document.addEventListener('DOMContentLoaded',()=>{
+    console.log("Dialog :", dialog)
+    dialog.close();
+})

@@ -15,6 +15,11 @@
         bottom: -170px;
     }
 
+    .banner-content .winner-name{
+        font-size: 46px;
+        letter-spacing: 10px;
+    }
+
 
   }
 
@@ -35,5 +40,17 @@
         bottom: -160px;
     }
 
+    .banner-content .winner-name{
+        font-size: 36px;
+        letter-spacing: 8px;
+    }
+
+    .btn-group{
+        flex-direction: column;
+    }
+
+    .btn-group button{
+        width: 130px;
+    }
     
   }
