@@ -27,13 +27,15 @@ const winning_combo = [
 ];
 
 function updateWin(winner){
+    dialog.style.display = 'flex';
     if(winner==planetMove){
-        dialog.style.display = 'flex'
-        winnerTitle.innerText = 'Planet Wins'
+        winnerTitle.innerText = 'Planet Wins';
+    }
+    else if(winner==starMove){
+        winnerTitle.innerText = 'Star Wins';
     }
     else{
-        dialog.style.display = 'flex'
-        winnerTitle.innerText = 'Star Wins'
+        winnerTitle.innerText = 'Game Tied';
     }
 }
 
@@ -57,27 +59,38 @@ function handleNextMove(e){
     if(nextMove == planetMove){
         shadowEle.className = 'move-shadow planet-element';
         planetMoveList.push(parseInt(elementNO))
-        if(checkForWin(planetMoveList)){
+        const gameStatus = checkForWin(planetMoveList)
+        if(gameStatus=='win'){
             updateWin(planetMove)
+        }
+        else if(gameStatus=='tie'){
+            updateWin('tie')
         }
         nextMove = starMove;
     }else{
         shadowEle.className = 'move-shadow star-element';
         starMoveList.push(parseInt(elementNO))
-        if(checkForWin(starMoveList)){
+        const gameStatus = checkForWin(starMoveList)
+        if(gameStatus == 'win'){
             updateWin(starMove)
+        }else if(gameStatus=='tie'){
+            updateWin('tie')
         }
         nextMove = planetMove;
     }
 }
 
 function checkForWin(movesList){
+    console.log(movesList)
     for (const combo of winning_combo) {
         if (combo.every(item => movesList.includes(item))) {
-            return true;
+            return 'win';
         }
     }
-    return false;
+    if (planetMoveList.length + starMoveList.length == 9){
+        return 'tie'
+    }
+    return 'continue';
 }
 
 elements.forEach((element)=>{
