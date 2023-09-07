@@ -3,6 +3,7 @@ const ticTacToeEle = document.querySelectorAll('.elements');
 const winnerDialog = document.getElementById('#winner');
 const dialog = document.getElementById("dialog");
 const winnerTitle = document.getElementById('winner-title');
+const bannerEle = document.getElementById('banner')
 
 const nextRoundBtn = document.getElementById('next-round-btn');
 const restartBtn = document.getElementById('restart-btn');
@@ -30,12 +31,16 @@ function updateWin(winner){
     dialog.style.display = 'flex';
     if(winner==planetMove){
         winnerTitle.innerText = 'Planet Wins';
+        bannerEle.classList.add('planet-bg')
+
     }
     else if(winner==starMove){
         winnerTitle.innerText = 'Star Wins';
+        bannerEle.classList.add('star-bg')
     }
     else{
         winnerTitle.innerText = 'Game Tied';
+        bannerEle.classList.add('tie-bg')
     }
 }
 
