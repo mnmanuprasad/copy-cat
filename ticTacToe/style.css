@@ -325,17 +325,16 @@ body{
     height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-    /* filter: invert(0.2);  */
 }
 
 .element .move-shadow.shadow-star{
-    background-image: url('/assests/star-shadow.svg');
+    background-image: url('./assests/star-shadow.svg');
     opacity: 0;
      transition: opacity 0.5s ease-in-out;
 }
 
 .element .move-shadow.shadow-planet{
-    background-image: url('/assests/planet-shadow.svg');
+    background-image: url('./assests/planet-shadow.svg');
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
 
