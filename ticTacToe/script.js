@@ -46,7 +46,6 @@ function updateWin(winner){
 
 function handleMouseOver(e){
    const shadowEle = e.target;
-   
    if(nextMove == planetMove){
     shadowEle.className = 'move-shadow shadow-planet';
    }
@@ -107,7 +106,6 @@ elements.forEach((element)=>{
 });
 
 document.addEventListener('DOMContentLoaded',()=>{
-    console.log("Dialog :", dialog)
     dialog.close();
 })
 
