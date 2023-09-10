@@ -1,5 +1,4 @@
 const elements = document.querySelectorAll('.move-shadow');
-const ticTacToeEle = document.querySelectorAll('.elements');
 const winnerDialog = document.getElementById('#winner');
 const dialog = document.getElementById("dialog");
 const winnerTitle = document.getElementById('winner-title');
@@ -8,11 +7,17 @@ const bannerEle = document.getElementById('banner')
 const nextRoundBtn = document.getElementById('next-round-btn');
 const restartBtn = document.getElementById('restart-btn');
 
-const starMoveList = [];
-const planetMoveList = [];
+const planetScoreEle = document.getElementById('planet-score');
+const starScoreEle = document.getElementById('star-score');
+
+let starMoveList = [];
+let planetMoveList = [];
 
 const planetMove = 'planet';
 const starMove = 'star';
+
+let planetScore = 0;
+let starScore = 0;
 
 let nextMove = planetMove;
 
@@ -30,11 +35,14 @@ const winning_combo = [
 function updateWin(winner){
     dialog.style.display = 'flex';
     if(winner==planetMove){
+        planetScore = planetScore + 1;
+        planetScoreEle.innerText = planetScore;
         winnerTitle.innerText = 'Planet Wins';
         bannerEle.classList.add('planet-bg')
-
     }
     else if(winner==starMove){
+        starScore = starScore + 1;
+        starScoreEle.innerText = starScore;
         winnerTitle.innerText = 'Star Wins';
         bannerEle.classList.add('star-bg')
     }
@@ -85,7 +93,6 @@ function handleNextMove(e){
 }
 
 function checkForWin(movesList){
-    console.log(movesList)
     for (const combo of winning_combo) {
         if (combo.every(item => movesList.includes(item))) {
             return 'win';
@@ -105,10 +112,30 @@ elements.forEach((element)=>{
     element.addEventListener('click',handleNextMove);
 });
 
-document.addEventListener('DOMContentLoaded',()=>{
-    dialog.close();
-})
 
 restartBtn.addEventListener('click',()=>{
     location.reload();
 })
+
+
+nextRoundBtn.addEventListener('click',()=>{
+    // Updating the move list to empty
+    starMoveList = [];
+    planetMoveList = [];
+
+    elements.forEach((element)=>{
+        element.addEventListener('mouseover',handleMouseOver);
+    });
+    
+    elements.forEach((element)=>{
+        element.addEventListener('click',handleNextMove);
+    });
+    
+    elements.forEach((element)=>{
+        console.log(element)
+        element.className = "move-shadow";
+    });
+    
+    dialog.style.display = 'none';
+})
+
